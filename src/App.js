@@ -2,8 +2,8 @@ import React from 'react';
 class ParentComponent extends React.Component {
 render(){
 return(<React.Fragment>
-  <h1>Basic React Component {200-99}</h1>
-  <p>{ < CalcComponent /> }</p>
+  <h1>{this.props.headerText}</h1>
+  <h1>{this.props.headerText2}</h1>
   <BodyText />
   </React.Fragment>);
 }
@@ -21,8 +21,5 @@ You can watch me torture an entire city.
 And then when you’ve truly understood the depth of your failure, we will fulfill Ra’s Al Ghul’s destiny.
 We will destroy Gotham. And then, when that is done, and Gotham is… ashes Then you have my permission to die.
 </div>
-
-
-const CalcComponent = () =>100 * 1000;
 
 export default ParentComponent;
