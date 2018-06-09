@@ -4,10 +4,8 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import PropsValidation from './PropsValidation';
+import EventHandling from './EventHandling';
 
 ReactDOM.render(
-  <React.Fragment>
-  <App headerText="Getting started with Props in React16" /><hr />
-  <PropsValidation name="Wu Muh"/>
-  </React.Fragment>, document.getElementById('root'));
+<EventHandling>Text From Above</EventHandling>, document.getElementById('root'));
 registerServiceWorker();
