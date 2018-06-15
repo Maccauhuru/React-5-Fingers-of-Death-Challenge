@@ -7,8 +7,9 @@ import './index.css';
 // import EventHandling from './EventHandling';
 // registerServiceWorker();
 //import HelloWorld from './HelloWorld';
-import StateChanges from './StateChanges';
+//import StateChanges from './StateChanges';
+import ReactForms from './ReactForms'
 
 ReactDOM.render(
-<StateChanges />, document.getElementById('root'));
+<ReactForms />, document.getElementById('root'));
 
