@@ -1,9 +1,13 @@
-import React from 'react'
+import React , { Component } from 'react';
 
-
-function HelloWorld (){
-  return(<p>Hard To Earn</p>)
+class HelloWorld extends Component {
+  state = {
+    tech : 'REDUX',
+    year : 2018
+  }
+  render(){
+    return(<div>Say Hello To My Lil Friend {this.state.tech} in the year {this.state.year}</div>)
+  }
 }
-
 
 export default HelloWorld;
