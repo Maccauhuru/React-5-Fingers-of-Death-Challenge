@@ -6,10 +6,10 @@ import './index.css';
 // import PropsValidation from './PropsValidation';
 // import EventHandling from './EventHandling';
 // registerServiceWorker();
-//import HelloWorld from './HelloWorld';
+import HelloWorld from './HelloWorld';
 //import StateChanges from './StateChanges';
-import ReactForms from './ReactForms'
+//mport ReactForms from './ReactForms'
 
 ReactDOM.render(
-<ReactForms />, document.getElementById('root'));
+<HelloWorld />, document.getElementById('root'));
 
