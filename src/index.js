@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './css/index.css';
 // import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 // import PropsValidation from './PropsValidation';
 // import EventHandling from './EventHandling';
 // registerServiceWorker();
-import HelloWorld from './HelloWorld';
+//import HelloWorld from './HelloWorld';
 //import StateChanges from './StateChanges';
-//mport ReactForms from './ReactForms'
+//import ReactForms from './ReactForms'
+import HelloWorldPureReactBook from './components/HelloWorldPureReactBook';
+//import HelloPureReactBook from './components/HelloPureReactBook';
+//import WorldPureReactBook from './components/WorldPureReactBook';
 
-ReactDOM.render(
-<HelloWorld />, document.getElementById('root'));
+
+ReactDOM.render(<HelloWorldPureReactBook />, document.getElementById('root'));
 
