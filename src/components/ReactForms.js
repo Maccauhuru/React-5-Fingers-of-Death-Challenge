@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 class ReactForms extends Component {
   constructor(){
@@ -7,6 +8,7 @@ class ReactForms extends Component {
       data : 'Type text here',
     }
     this.handleUpdateState = this.handleUpdateState.bind(this);
+    this.handleClearFormInput = this.handleClearFormInput.bind(this);
   }
 
 handleUpdateState(e){
@@ -15,11 +17,19 @@ this.setState({
 });
 }
 
+handleClearFormInput(){
+  this.setState({
+    data : ''
+  });
+  ReactDOM.findDOMNode(this.refs.myText).focus();
+}
+
   render() {
     return (
-      <div>
-        <input type="text"  value={this.state.data} onChange={this.handleUpdateState}/>
+      <div><br />
+        <input type="text"  value={this.state.data} onChange={this.handleUpdateState} ref="myText"/>
         <h2>{this.state.data}</h2>
+        <button onClick={this.handleClearFormInput}>CLEAR</button>
       </div>
     )
   }
