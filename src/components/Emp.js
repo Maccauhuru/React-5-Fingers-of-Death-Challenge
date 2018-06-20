@@ -5,6 +5,7 @@ const Emp = (props) => {
     <tr width="50%">
      <td>{props.children}</td> 
      <td>{props.salary}</td> 
+     <td><button onClick={props.deleteEvent}>DELETE</button></td>
     </tr>
   )
 }
