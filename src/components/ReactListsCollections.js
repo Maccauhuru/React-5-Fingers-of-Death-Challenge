@@ -11,6 +11,11 @@ class ReactListsCollections extends Component {
             {id : 5, name : "Wesley", salary : 1200} 
     ]     
     }
+    handleDeleteEmp=(index,e)=>{
+    const copyempb = Object.assign([],this.state.emps); 
+    copyempb.splice(index,1);
+    this.setState({emps : copyempb});
+    }
   render() {
     return (
       <div >
@@ -18,7 +23,12 @@ class ReactListsCollections extends Component {
         <tbody>
         {
            this.state.emps.map((emp)=>{
-           return (<Emp key={emp.id} salary={emp.salary}>{emp.name} </Emp>)
+           return (<Emp 
+                     salary={emp.salary}
+                     key={emp.id}
+                     deleteEvent={this.handleDeleteEmp.bind(this,emp.id)}>
+                     {emp.name} 
+                  </Emp>)
            })
         }
         </tbody>
