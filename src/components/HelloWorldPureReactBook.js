@@ -19,6 +19,7 @@ return (
 { /* here is a comment */ }
 {isReactGood && 'React Is Good!'}
 {!isReactGood && 'React Is Not Good'}
+
 </h1>
 );
 }
