@@ -9,11 +9,12 @@ import './css/index.css';
 //import HelloWorld from './HelloWorld';
 //import StateChanges from './StateChanges';
 //import ReactForms from './components/ReactForms';
-import HelloWorldPureReactBook from './components/HelloWorldPureReactBook';
+//import HelloWorldPureReactBook from './components/HelloWorldPureReactBook';
 //import HelloPureReactBook from './components/HelloPureReactBook';
 //import WorldPureReactBook from './components/WorldPureReactBook';
 //import ReactListsCollections from './components/ReactListsCollections'
+import HelloRedux from './components/HelloRedux';
 
 
-ReactDOM.render( <HelloWorldPureReactBook / > , document.getElementById('root'));
+ReactDOM.render( <HelloRedux / > , document.getElementById('root'));
 
