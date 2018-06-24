@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import HigherOrderComponent from './HigherOrderComponent';
 import Emp from './Emp';
+
 
 class ReactListsCollections extends Component {
     state = {
@@ -38,4 +40,4 @@ class ReactListsCollections extends Component {
   }
 }
 
-export default ReactListsCollections;
+export default HigherOrderComponent('emps')(ReactListsCollections);
