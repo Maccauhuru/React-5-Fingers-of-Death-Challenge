@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-import ReactListsCollections from './components/ReactListsCollections';
+//import ReactListsCollections from './components/ReactListsCollections';
 // import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 // import PropsValidation from './PropsValidation';
@@ -14,10 +14,10 @@ import ReactListsCollections from './components/ReactListsCollections';
 //import HelloPureReactBook from './components/HelloPureReactBook';
 //import WorldPureReactBook from './components/WorldPureReactBook';
 //import ReactListsCollections from './components/ReactListsCollections'
-//import HelloRedux from './components/HelloRedux';
+import HelloRedux from './components/HelloRedux';
 //import ReactRouter from './components/ReactRouter';
 //import ReactAnimations from './components/ReactAnimations';
 
 
-ReactDOM.render( <ReactListsCollections /> , document.getElementById('root'));
+ReactDOM.render( <HelloRedux /> , document.getElementById('root'));
 
