@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
+import AddressLabel from './components/AddressLabel';
+import Person from '../src/Seeds/Person';
 //import ReactListsCollections from './components/ReactListsCollections';
 // import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
@@ -14,10 +16,10 @@ import './css/index.css';
 //import HelloPureReactBook from './components/HelloPureReactBook';
 //import WorldPureReactBook from './components/WorldPureReactBook';
 //import ReactListsCollections from './components/ReactListsCollections'
-import HelloRedux from './components/HelloRedux';
+//import HelloRedux from './components/HelloRedux';
 //import ReactRouter from './components/ReactRouter';
 //import ReactAnimations from './components/ReactAnimations';
 
 
-ReactDOM.render( <HelloRedux /> , document.getElementById('root'));
+ReactDOM.render( <AddressLabel info={Person} year={'2018'} /> , document.getElementById('root'));
 
