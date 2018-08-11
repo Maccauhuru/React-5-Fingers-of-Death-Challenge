@@ -1,0 +1,6 @@
+.badge:active,
+.badge:focus,
+.badge:active:focus,
+.badge.active:focus {
+    outline: none !important;
+}
